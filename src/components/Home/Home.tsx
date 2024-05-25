@@ -127,6 +127,7 @@ const Home = (): React.ReactElement => {
     );
     setFavoriteCities(newFavoriteCities);
     localStorage.setItem("favoriteCities", JSON.stringify(newFavoriteCities));
+    SuccessToast("City deleted successfully");
   };
 
   const renderFavoritePlaces = (): React.ReactElement => (
